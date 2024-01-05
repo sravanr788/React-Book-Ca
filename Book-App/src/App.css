@@ -1,0 +1,206 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+}
+.nav{
+  width: 80vw;
+  margin: 1rem;
+  justify-content: space-evenly;
+  align-items:baseline;
+  align-items: center;
+  box-shadow: 0px 4px 1px 1px rgba(242, 240, 240, 0.25);
+}
+.logodiv{
+  align-items: center;
+}
+.inputdiv{
+  background-color: white;
+}
+.input{
+  width: 45vw;
+  padding: 8px;
+  text-indent:2.5rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('https://www.w3schools.com/css/searchicon.png');
+  background-position: 15px 8px; 
+  background-repeat: no-repeat;
+  color: black;
+  height: fit-content;
+
+}
+.register{
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 10px auto 10px;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: 0.25s;
+  background-color: rgb(255, 255, 255);
+  color: red;
+  border: 2px solid red;
+}
+.book-container{
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 35px;
+  /* height: 20vh; */
+}
+
+.book:hover{
+  padding: 10px;
+  transform: scale(1.03);
+  background-color: rgba(151, 128, 128, 0.3);
+}
+.message {
+  z-index: 5;
+  font-size: larger;
+  position: fixed;
+  margin: 20px auto;
+  margin-top: 16%;
+margin-left: 34%;
+}
+#title{
+  /* width: 80%; */
+  /* width: 200px; */
+  /* font-size: 1; */
+  margin: 10px auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+span{
+  color: red;
+  padding-left: 5px;
+  font-size: 1rem;
+}
+.form-container{
+  color: white;
+  align-items: center;
+  flex-direction: column;
+}
+.err {
+  box-sizing: border-box;
+  margin: none;
+  padding: none;
+  color: red;
+  font-size: 12px;
+}
+.form {
+  flex-direction: column;
+  align-items: center;
+  border: solid red;
+  text-align: center;
+  padding: 30px 40px;
+  border-radius: 1em;
+}
+.form h1 {
+  font-size: 1.7em;
+  color: red;
+}
+.form input{
+  padding: 0.7em;
+  margin: 20px auto;
+  display: block;
+  text-align: left;
+  font-size: 1em;
+  font-weight: 3px;
+  background: none;
+  color: white;
+  transition: 0.25s;
+  cursor: pointer;
+  border: none;
+  border-bottom: 2px solid red;
+}
+.bookimg{
+  height: 170px;
+}
+.signup { 
+  font-weight: bold;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  margin: 20px auto 10px;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: 0.25s;
+  background-color: red;
+  border: 2px solid red;
+}
+a{
+  text-decoration: none;
+  color: red;
+}
+.register:hover , .signup:hover{
+  transform: scale(1.1);
+}
+.register:active , .signup:active{
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(252, 250, 250, 0.25);
+}
+.h2{
+  font-size: 3rem;
+  color: red;
+  /* width: 200px; */
+}
+h5 {
+  color: aliceblue;
+  text-align: center;
+  word-spacing: 3px;
+  font-size: 0.95em;
+  letter-spacing: 1.4px;
+}
+
+/* Responsive styles for screens with a width of 430px or less */
+@media screen and (max-width: 430px) {
+  .nav {
+    width: 90vw;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .input {
+    width: 80vw;
+  }
+
+  .book-container {
+    grid-template-columns: repeat(1,1fr);
+    font-size: 0.5em;
+    margin: 10px;
+  }
+  .message{
+    font-size: medium;
+    margin: 55% 18%;
+  }
+  .form{
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .nav {
+    width: 90vw;
+  }
+
+  .input {
+    width: 80vw;
+  }
+
+  .book-container {
+    grid-template-columns: repeat(2,1fr);
+    font-size: 0.5em;
+  }
+}
