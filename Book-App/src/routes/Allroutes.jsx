@@ -1,9 +1,9 @@
 // imports
 import React from 'react'
 import { Route, Routes } from 'react-router-dom' // importing Route,Routes from react-router-dom
-import Book from '../component/Book'
-import Form from '../component/Form'
-import PagenotFound from '../component/PagenotFound'
+import Book from '../components/Book'
+import Form from '../components/Form'
+import PagenotFound from '../components/PagenotFound'
 import PrivateRoute from './PrivateRoute'
 
 const Allroutes = () => {

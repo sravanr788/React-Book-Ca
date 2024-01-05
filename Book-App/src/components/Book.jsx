@@ -23,7 +23,8 @@ const Book = () => {
         }
         fetchData();
     })
-    const searchvalue = data.filter(elem => elem.title.toLowerCase().includes(value));  // filtering the data based on the input value 
+      
+    const searchvalue = data.filter(elem => elem.title.toLowerCase().includes(value.toLowerCase())); // filtering the data based on the input value 
 
     var hoverStyle = {
         padding : "10px",

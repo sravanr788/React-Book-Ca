@@ -1,10 +1,8 @@
 // imports 
 import React from 'react'
 import './App.css'
-import Book from './component/Book'
-import Navbar from './component/Navbar'
+import Navbar from './components/Navbar'
 import Allroutes from './routes/Allroutes'
-import Form from './component/Form'
 
 function App() {
 
