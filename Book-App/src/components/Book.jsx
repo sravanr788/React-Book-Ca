@@ -25,6 +25,8 @@ const Book = () => {
     })
       
     const searchvalue = data.filter(elem => elem.title.toLowerCase().includes(value.toLowerCase())); // filtering the data based on the input value 
+    const userdata = localStorage.getItem("data");
+    console.log(userdata)
 
     var hoverStyle = {
         padding : "10px",
